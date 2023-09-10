@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
 
+
+/* ! Reset css  */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,8 +52,12 @@ table {
 	border-spacing: 0;
 }
 
+/* ! Reset css end  */
+
 body { 
-    background-color: black;
+    background-color: rgb(9, 9, 9);
+	font-family: 'Alegreya', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 #content {
@@ -60,8 +67,9 @@ body {
 
 .navbar { 
 	display: flex;
-	background-color: rgba(241, 217, 217, 0.85);
-	padding: 10px 10px 20px 40px ;
+	background-color: rgba(33, 32, 32, 0.85);
+	color: whitesmoke;
+	padding: 1vh 1vh 2vh 4vh ;
 	font-size: 2.6vh ;
 	cursor: pointer;
 	position: fixed;
@@ -72,15 +80,123 @@ body {
 }
 
 .navbar > a { 
-	padding: 10px 10px 10px 15px ;
-	border-bottom: 1px solid rgba(211, 191, 191, 0.563) ;
+	padding: 2vh 2vh 1vh 1.5vh ;
+	border-bottom: 1px solid rgba(33, 32, 32, 0.85) ;
 	transition: 0.42s ease-in-out;
 }
 
 .navbar > a:hover {
 	border-bottom: 1px solid black;
 	border-radius: 10px;
-	color: rgb(71, 5, 5);
-	border-color: rgb(71, 5, 5);
+	border-color: whitesmoke;
  }
 
+#cocktailVideo { 
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	object-fit: cover;
+	z-index: 1;
+}
+
+#cocktailTextDiv { 
+	z-index: 5;
+	color: rgb(193, 193, 193);
+	position: absolute;
+	top: 15vh;
+	left: 2vw;
+	width: 30vw;
+}
+
+#cocktailTextHeader{ 
+	text-align: center;
+	font-size: 6vh;
+	width: 40vw;
+	color: rgb(193, 193, 193);
+	margin-bottom: 5vh;
+}
+
+#cocktailTextP { 
+	margin-top: 2vh;
+	margin-left: 2vw;
+	font-size: 2.2vh;
+	letter-spacing: 0.18vw;
+	width: 30vw;
+	text-align: center;
+	line-height: 2.8vh;
+}
+
+#promotionDiv { 
+	/* border-top: 0.3vw solid rgb(102, 102, 102);
+	border-right: 0.2vw solid  rgb(102, 102, 102);
+	border-left: 0.2vw solid  rgb(102, 102, 102);
+	border-radius: 3vw 3vw 0 0; */
+	margin: auto;
+	margin-top: 12vh;
+	width: 88vw;
+}
+
+
+.promotionCocktailSections { 
+	color: rgb(193, 193, 193);
+	margin: 4vh auto;
+	width: 80vw;
+	height: 50vh;
+	border-radius: 3vw 3vw;
+	display: flex;
+	font-size: 1.5vw;
+	line-height: 3.8vh;
+}
+
+
+.cocktailSectionText { 
+	margin: 4vh 3vw;
+	width: 40vw;
+}
+
+.cocktailSectionText >h2  { 
+	text-align: center;
+	font-size: 5vh;
+	margin-bottom: 4vh;
+	font-weight: 500;
+}
+
+.cocktailImg { 
+	height: 45vh;
+	margin: 3vh 8vw 3vh 8vw;
+	border: 0.2vw solid rgb(129, 129, 129);
+	border-radius: 35px;
+	-webkit-box-shadow: 0px 6px 20px 2px rgba(167, 167, 167, 0.68);
+	-moz-box-shadow: 0px 6px 20px 2px rgba(167, 167, 167, 0.68);
+	box-shadow: 0px 6px 20px 2px rgba(167, 167, 167, 0.68);
+}
+
+.cocktailSectionP { 
+	margin-top: 20px;
+	width: 43vw;
+}
+
+#footer { 
+	background-color: rgb(9, 9, 9);
+	width: 100vw;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#footerContent { 
+	background-color: rgb(9, 9, 9);
+	width: 88vw;
+	height: 30vh;
+	border-radius: 30px;
+	border:1px solid rgb(73, 73, 73);
+	-webkit-box-shadow: 0px 6px 60px 0px rgba(167, 167, 167, 0.68);
+	-moz-box-shadow: 0px 6px 60px 0px rgba(167, 167, 167, 0.68);
+	box-shadow: 0px 6px 60px 0px rgba(167, 167, 167, 0.68);
+
+}
+
+#footerImg {
+	filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(214deg) brightness(109%) contrast(106%);
+}

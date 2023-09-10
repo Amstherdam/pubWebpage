@@ -1,47 +1,69 @@
 /* Create navbar anad navbar's inside items */
 
-let contentDiv = document.getElementById('content');
+import createHomePage from "./homePage";
+import createMenuPage from "./menuPage";
+import createFooter from "./footer";
 
-let navbarItems = [ 'Home', 'Menu', 'About', 'Contant' ]
+const createNavbar = () => { 
 
-const navbarDiv = document.createElement('div')
-navbarDiv.classList.add('navbar')
+const content = document.querySelector('#content')
 
-navbarItems.forEach(item => { 
-    
-    let navbarP = document.createElement('a')
-    navbarP.innerHTML = item;
+    let navbarItems = ['Home', 'Menu', 'About', 'Contact'];
 
-    
-    navbarDiv.appendChild(navbarP)
-    contentDiv.appendChild(navbarDiv)
- 
-})
+    const navbarDiv = document.createElement('div');
+    navbarDiv.classList.add('navbar')
 
-const contentVideo = document.createElement('video'); 
+    navbarItems.forEach(item => { 
 
-/* Bu kısmı yorum satırından  kaldırınca navbar  elemanlarının hover 
-ozellıklerı fılan bozuluyor, normalde videonunda oynamasi lazim ama oynamiyor  */
+        let navbarA = document.createElement('a')
+        navbarA.innerHTML = item
 
-/* Eventlıstener dısında baslatınca  */
+        navbarA.setAttribute('id', item)
 
-contentVideo.src = './video/coctailVideo2.mp4'
- 
+        navbarDiv.appendChild(navbarA)
+        content.appendChild(navbarDiv)
 
-/* document.addEventListener('load', () => { 
-    
-}); */
+       navbarA.addEventListener('click', () => { 
+        if(navbarA.id === 'Home') { 
+            clearContent()
+            createHomePage()
+            
+        }
+        else if (navbarA.id === 'Menu') { 
+            clearContent()
+            createMenuPage()
+            createFooter()
+        }
+        else if (navbarA.id === 'About') { 
+            clearContent()
 
-    contentVideo.autoplay = true;
-    contentVideo.loop = true;
-    contentVideo.style.maxWidth = 'auto';
-    contentVideo.style.height = 'auto';
+            createFooter()
+        }
+        else if (navbarA.id === 'Contact') { 
+            clearContent()
+                
+            createFooter()
+        }
+       })
+    })
 
-contentDiv.appendChild(contentVideo);
 
-
-export default {
-    navbarItems,
-    contentDiv
 }
+
+function clearContent() { 
+    const content = document.querySelector('#content')
+    const pageContent = document.querySelector('.page-content');
+    const footer = document.querySelector('#footer')
+    if(pageContent) {
+        content.removeChild(pageContent);
+       if(footer) { 
+        content.removeChild(footer)
+       }
+    }
+}
+
+
+
+export default createNavbar;
+
 
