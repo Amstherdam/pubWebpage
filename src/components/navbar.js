@@ -3,6 +3,8 @@
 import createHomePage from "./homePage";
 import createMenuPage from "./menuPage";
 import createFooter from "./footer";
+import createAboutPage from "./aboutPage";
+import createContactPage from "./contact";
 
 const createNavbar = () => { 
 
@@ -36,12 +38,12 @@ const content = document.querySelector('#content')
         }
         else if (navbarA.id === 'About') { 
             clearContent()
-
+            createAboutPage()
             createFooter()
         }
         else if (navbarA.id === 'Contact') { 
             clearContent()
-                
+            createContactPage()
             createFooter()
         }
        })

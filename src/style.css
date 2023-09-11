@@ -136,7 +136,6 @@ body {
 	width: 88vw;
 }
 
-
 .promotionCocktailSections { 
 	color: rgb(193, 193, 193);
 	margin: 4vh auto;
@@ -147,7 +146,6 @@ body {
 	font-size: 1.5vw;
 	line-height: 3.8vh;
 }
-
 
 .cocktailSectionText { 
 	margin: 4vh 3vw;
@@ -190,13 +188,50 @@ body {
 	width: 88vw;
 	height: 30vh;
 	border-radius: 30px;
-	border:1px solid rgb(73, 73, 73);
-	-webkit-box-shadow: 0px 6px 60px 0px rgba(167, 167, 167, 0.68);
-	-moz-box-shadow: 0px 6px 60px 0px rgba(167, 167, 167, 0.68);
-	box-shadow: 0px 6px 60px 0px rgba(167, 167, 167, 0.68);
-
+	-webkit-box-shadow: 0px 6px 30px 0px #fad1fa78;
+	-moz-box-shadow: 0px 6px 30px 0px #fad1fa78;
+	box-shadow: 0px 6px 30px 0px #fad1fa78;
+	display: flex;
+	justify-content: space-around;
 }
 
 #footerImg {
-	filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(214deg) brightness(109%) contrast(106%);
+	filter: invert(94%) sepia(26%) saturate(619%) hue-rotate(315deg) brightness(97%) contrast(98%);
+	width: 13vw;
+	margin: 5vh 0vw 5vh 0vw;
+}
+
+#footerSocialDiv { 
+	margin-top: 10vh;
+	display: flex;
+	width: 28vw;
+	justify-content: space-evenly;
+}
+
+.socialIcon { 
+	color: wheat;
+	font-size: 8vh;
+	cursor: pointer;
+}
+
+#footerAdressContainer { 
+	margin-top: 5vh;
+}
+
+#numberAdressHeader { 
+	font-size: 4vh;
+	color: wheat;
+	text-align: center;
+}
+
+#numberP { 
+	color: wheat;
+	text-align: center;
+	margin-top: 5vh;
+	font-size: 2.5vh;
+}
+
+#address { 
+	color: wheat;
+	margin-top: 3vh;
 }

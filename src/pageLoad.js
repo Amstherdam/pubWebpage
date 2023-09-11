@@ -4,8 +4,8 @@ import createNavbar from "./components/navBar"
 
 function initionalLoad() { 
     createNavbar()
-    createHomePage()   
+    createHomePage()
+    
 }
-
 
 export default initionalLoad
