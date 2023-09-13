@@ -19,6 +19,7 @@ const createContactPage= () => {
     contactMap.width = '100%'
     contactMap.height = '100%'
     contactMap.style.borderRadius = '0px 30px 30px 0 '
+    contactMap.style.filter = 'grayscale(20%) invert(95%) '
 
     
 
