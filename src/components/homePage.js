@@ -25,11 +25,11 @@ const createHomePage = () =>  {
 
     const cocktailTextHeader = document.createElement('h2');
     cocktailTextHeader.setAttribute('id', 'cocktailTextHeader')
-    cocktailTextHeader.textContent = 'Welcome the MixologyPub'
+    cocktailTextHeader.textContent = 'Welcome the onlyCocktail'
 
     const cocktailTextP = document.createElement('p');
     cocktailTextP.setAttribute('id', 'cocktailTextP');
-    cocktailTextP.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et molestie tellus. Donec scelerisque leo dui, fringilla pulvinar purus elementum euismod. Sed aliquam congue pulvinar. Sed blandit, nisi quis hendrerit dictum, lacus tortor aliquam felis, in finibus mi eros in mi. Mauris quis lectus suscipit, auctor enim ut, vulputate lacus. In non urna ac risus rhoncus luctus. Praesent convallis metus erat, vel suscipit nisi blandit id. Nullam porta urna vitae dignissim iaculis.';
+    cocktailTextP.textContent = 'onlyCocktail drinks have always been vehicles for stories– be it about the cultures that inspire them, the ingredients that bring them to fruition, or the spirits themselves, carefully crafted by masters around the region. Come by the onlyCocktail bar for a drink and trace its history with us.';
 
     
 

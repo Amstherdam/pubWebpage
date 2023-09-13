@@ -24,7 +24,8 @@ const createMenuPage = () => {
 
         const promotionHeader = document.createElement('h2')
         promotionHeader.classList.add('cocktailHeader')
-        promotionHeader.innerHTML = item ;
+        const itemUpper = item.toUpperCase()
+        promotionHeader.innerHTML = itemUpper ;
 
         const cocktailImageDiv = document.createElement('div')
         cocktailImageDiv.classList.add('cocktailImageDiv')

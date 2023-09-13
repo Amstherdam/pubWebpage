@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Allura&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,400;1,500&display=swap');
 
 
 /* ! Reset css  */
@@ -56,8 +58,7 @@ table {
 
 body { 
     background-color: rgb(9, 9, 9);
-	font-family: 'Alegreya', serif;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #content {
@@ -67,7 +68,7 @@ body {
 
 .navbar { 
 	display: flex;
-	background-color: rgba(33, 32, 32, 0.85);
+	background-color: rgba(14, 13, 13, 0.85);
 	color: whitesmoke;
 	padding: 1vh 1vh 2vh 4vh ;
 	font-size: 2.6vh ;
@@ -81,7 +82,7 @@ body {
 
 .navbar > a { 
 	padding: 2vh 2vh 1vh 1.5vh ;
-	border-bottom: 1px solid rgba(33, 32, 32, 0.85) ;
+	border-bottom: 1px solid rgba(14, 13, 13, 0.85) ;
 	transition: 0.42s ease-in-out;
 }
 
@@ -103,27 +104,26 @@ body {
 	z-index: 5;
 	color: rgb(193, 193, 193);
 	position: absolute;
-	top: 15vh;
-	left: 2vw;
+	top: 14vh;
 	width: 30vw;
 }
 
 #cocktailTextHeader{ 
 	text-align: center;
-	font-size: 6vh;
-	width: 40vw;
+	font-size: 8.2vh;
+	width: 42vw;
 	color: rgb(193, 193, 193);
-	margin-bottom: 5vh;
+	margin-bottom: 3vh;
+	font-family: 'Allura', cursive;
 }
 
 #cocktailTextP { 
 	margin-top: 2vh;
 	margin-left: 2vw;
 	font-size: 2.2vh;
-	letter-spacing: 0.18vw;
-	width: 30vw;
+	width: 35vw;
 	text-align: center;
-	line-height: 2.8vh;
+	line-height: 2.9vh;
 }
 
 #promotionDiv { 
@@ -154,9 +154,11 @@ body {
 
 .cocktailSectionText >h2  { 
 	text-align: center;
-	font-size: 5vh;
+	font-size: 8vh;
 	margin-bottom: 4vh;
 	font-weight: 500;
+	font-family: 'Allura', cursive;
+	letter-spacing: 0.4vw;
 }
 
 .cocktailImg { 
@@ -222,6 +224,7 @@ body {
 	font-size: 4vh;
 	color: wheat;
 	text-align: center;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #numberP { 
@@ -234,4 +237,38 @@ body {
 #address { 
 	color: wheat;
 	margin-top: 3vh;
+}
+
+#aboutContainer  { 
+	position: relative;
+}
+
+#aboutBackgroundImg { 
+	width: 100vw;
+	height: auto;
+	z-index: 1;
+}
+
+#aboutTextDiv { 
+	position: absolute;
+	z-index: 5;
+	color: whitesmoke;
+	top: 20vh;
+	left: 55vw;
+	width: 35vw;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.366);
+	padding: 6vh 3vw 5vh 3vw;
+	border-radius: 26px;
+	font-size: 2.6vh;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	line-height: 3.2vh;
+	
+}
+
+#aboutTextH  {
+	font-size: 6vh;
+	font-family: 'Allura', cursive;
+	padding-bottom: 3vh;
 }
