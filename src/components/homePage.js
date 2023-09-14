@@ -6,7 +6,7 @@ const createHomePage = () =>  {
 
     const cocktailVideo = document.createElement('video'); 
     cocktailVideo.setAttribute('id', 'cocktailVideo')
-    cocktailVideo.autoplay = true;
+    cocktailVideo.autoplay = 'true';
     cocktailVideo.loop = true;
     cocktailVideo.style.maxWidth = 'auto';
     cocktailVideo.style.height = 'auto';
@@ -15,6 +15,7 @@ const createHomePage = () =>  {
     cocktailVideoSource.src = './video/cocktailVideo.mp4'
     cocktailVideoSource.type = 'video/mp4'
 
+    
     // Append created items
     cocktailVideo.appendChild(cocktailVideoSource);
     pageContent.appendChild(cocktailVideo);
@@ -30,8 +31,6 @@ const createHomePage = () =>  {
     const cocktailTextP = document.createElement('p');
     cocktailTextP.setAttribute('id', 'cocktailTextP');
     cocktailTextP.textContent = 'onlyCocktail drinks have always been vehicles for stories– be it about the cultures that inspire them, the ingredients that bring them to fruition, or the spirits themselves, carefully crafted by masters around the region. Come by the onlyCocktail bar for a drink and trace its history with us.';
-
-    
 
     pageContent.appendChild(cocktailTextDiv);
     cocktailTextDiv.appendChild(cocktailTextHeader);

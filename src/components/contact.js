@@ -21,17 +21,37 @@ const createContactPage= () => {
     contactMap.style.borderRadius = '0px 30px 30px 0 '
     contactMap.style.filter = 'grayscale(20%) invert(95%) '
 
-    
-
     const contactContainerText = document.createElement('div')
     const contactContainerMap = document.createElement('div')
+    contactContainerText.setAttribute('id', 'contactContainerText')
 
     contactContainerText.setAttribute('id', 'contactContainerText')
     contactContainerMap.setAttribute('id', 'contactContainerMap')
 
+    const contactContainerTextImg = document.createElement('img')
+    contactContainerTextImg.src = "./image/cocktailLogo.png" ;
+    contactContainerTextImg.setAttribute('id', 'contactContainerTextImg')
+    const contactContainerInsideText = document.createElement('div')
+    const contactContainerTextH = document.createElement('h2')
+    const contactContainerTextP = document.createElement('p')
+    const contactContainerTextP2 = document.createElement('p')
+    const contactContainerTextP3 = document.createElement('p')
+
+    contactContainerTextH.innerHTML = 'Contatct'
+    contactContainerTextP.innerHTML = 'Adress : 678 Green St #3, San Francisco, CA 94133, USA'
+    contactContainerTextP2.innerHTML = 'Number : +99 999 99 999'
+    contactContainerTextP3.innerHTML = 'Mail : onlyCocktail@cocktail.com'
+
+    contactContainerInsideText.appendChild(contactContainerTextH)
+    contactContainerInsideText.appendChild(contactContainerTextP)
+    contactContainerInsideText.appendChild(contactContainerTextP2)
+    contactContainerInsideText.appendChild(contactContainerTextP3)
+    contactContainerText.appendChild(contactContainerTextImg)
+    contactContainerText.appendChild(contactContainerInsideText)
     contactMapDiv.appendChild(contactMap);
 
     contactImageDiv.appendChild(contactImage)
+    contactContainer.appendChild(contactContainerText)
     contactContainer.appendChild(contactImageDiv)  
     contactContainer.appendChild(contactMapDiv) 
     pageContent.appendChild(contactContainer)
