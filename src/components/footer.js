@@ -53,15 +53,12 @@
    footerAdressAndNumberDiv.appendChild(footerAdressAndNumberDivP)
    footerAdressAndNumberDiv.appendChild(footerAdressAndNumberDivP2)
 
-   
    footerImgDiv.appendChild(footerImg)
    footerContent.appendChild(footerImgDiv)
    footerContent.appendChild(footerSocialDiv)
    footerContent.appendChild(footerAdressAndNumberDiv)
    footer.appendChild(footerContent)
    content.appendChild(footer);
-
-   
 
    document.querySelector('#instagram').classList.add('fa-brands')
    document.querySelector('#instagram').classList.add('fa-instagram')

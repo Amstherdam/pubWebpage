@@ -15,7 +15,6 @@ const createHomePage = () =>  {
     cocktailVideoSource.src = './video/cocktailVideo.mp4'
     cocktailVideoSource.type = 'video/mp4'
 
-    
     // Append created items
     cocktailVideo.appendChild(cocktailVideoSource);
     pageContent.appendChild(cocktailVideo);
@@ -36,7 +35,6 @@ const createHomePage = () =>  {
     cocktailTextDiv.appendChild(cocktailTextHeader);
     cocktailTextDiv.appendChild(cocktailTextP)
     content.appendChild(pageContent)
-
 }
 
 export default createHomePage;

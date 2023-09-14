@@ -1,11 +1,9 @@
-/* import createHomePage from "./components/homePage" */
-import createContactPage from "./components/contact"
+import createHomePage from "./components/homePage"
 import createNavbar from "./components/navBar"
-
 
 function initionalLoad() { 
     createNavbar()
-    createContactPage()
+    createHomePage()
 }
 
 export default initionalLoad

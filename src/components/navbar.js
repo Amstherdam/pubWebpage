@@ -1,5 +1,4 @@
 /* Create navbar anad navbar's inside items */
-
 import createHomePage from "./homePage";
 import createMenuPage from "./menuPage";
 import createFooter from "./footer";
@@ -48,8 +47,6 @@ const content = document.querySelector('#content')
         }
        })
     })
-
-
 }
 
 function clearContent() { 

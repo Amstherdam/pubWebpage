@@ -33,7 +33,6 @@ const createAboutPage = () => {
     pageContent.appendChild(aboutContainer)
     content.appendChild(pageContent)
 
-    
 }
 
 export default createAboutPage
